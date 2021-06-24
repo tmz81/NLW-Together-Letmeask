@@ -1,25 +1,16 @@
-import { useHistory } from 'react-router-dom';
-import { useAuth } from '../hooks/useAuth';
+import { Link } from 'react-router-dom';
 
 import illustrationImg from '../assets/img/illustration.svg';
 import logoImg from '../assets/img/logo.svg';
-import googleIcon from '../assets/img/google-icon.svg';
 
 import { Button } from '../components/Button';
+import { useAuth} from '../hooks/useAuth';
 
 import '../styles/auth.scss';
 
-export function Home(){
-    const history = useHistory();
-    const { user, signInWithGoogle } = useAuth()
+export function NewRoom(){
+    const { user } = useAuth()
 
-    async function handCreateRoom(){
-        if (!user) {
-            await signInWithGoogle()
-        }
-    
-        history.push('/rooms/new');
-    }
 
     return (
         <div id="page-auth">
@@ -32,20 +23,21 @@ export function Home(){
             <main>
                 <div className="main-content">
                     <img src={logoImg} />
-                    <button onClick={handCreateRoom} className="create-room">
-                        <img src={googleIcon} />
-                        Crie sua sala com o Google
-                    </button>
-                    <div className="separator">ou entre em uma sala</div>
+                    <h1>{user?.name}</h1>
+                    <h2>Criar uma nova sala</h2>
+                    <p></p>
                     <form>
                         <input 
                         type="text"
-                        placeholder="Digite o código da sala"
+                        placeholder="Nome da sala"
                         />
                         <Button type="submit">
-                            Entrar na sala
+                            Criar sala
                         </Button>
                     </form>
+                    <p>
+                        Quer entrar em uma sala já existente? <Link to="/">Clique aqui!</Link>
+                    </p>
                 </div>
             </main>
         </div>

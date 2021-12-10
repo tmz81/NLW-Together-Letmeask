@@ -1,5 +1,4 @@
 import copyImg from '../assets/img/copy.svg';
-
 import '../styles/room-code.scss';
 
 type RoomCodeProps = {
@@ -19,4 +18,4 @@ export function RoomCode(props: RoomCodeProps) {
       <span>Sala #{props.code}</span>
     </button>
   )
-}
+};

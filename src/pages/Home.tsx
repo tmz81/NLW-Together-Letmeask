@@ -1,12 +1,9 @@
 import { useHistory } from 'react-router-dom'
 import { FormEvent, useState } from 'react';
-
 import illustrationImg from '../assets/img/illustration.svg'
 import logoImg from '../assets/img/logo.svg';
 import googleIconImg from '../assets/img/google-icon.svg';
-
 import { database } from '../services/firebase';
-
 import { Button } from '../components/Button';
 import { useAuth } from '../hooks/useAuth';
 
@@ -72,4 +69,4 @@ export function Home() {
       </main>
     </div>
   )
-}
+};

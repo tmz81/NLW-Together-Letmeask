@@ -4,8 +4,8 @@ import { useAuth } from "./useAuth";
 
 type FirebaseQuestion = Record<string, {
   author: {
-      name: string;
-      avatar: string;
+    name: string;
+    avatar: string;
   }
   content: string;
   isAnswered: boolean;
@@ -18,8 +18,8 @@ type FirebaseQuestion = Record<string, {
 type QuestionType = {
   id: string;
   author: {
-      name: string;
-      avatar: string;
+    name: string;
+    avatar: string;
   }
   content: string;
   isAnswered: boolean;
@@ -63,4 +63,4 @@ export function useRoom(roomId: string) {
   }, [roomId, user?.id]);
 
   return { questions, title }
-}
+};

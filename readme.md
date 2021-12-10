@@ -3,7 +3,7 @@
 </p>
 
 <h1 align="center">
-    <img alt="Letmeask" src=".github/cover.svg" />
+  <img alt="Letmeask" src=".github/cover.svg"/>
 </h1>
 
 <br>
@@ -12,9 +12,11 @@
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- [React](https://reactjs.org)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Firebase](https://firebase.google.com/)
+- React
+- Hooks
+- Sass
+- TypeScript
+- Firebase
 
 ## 🚀 Como executar
 

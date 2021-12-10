@@ -1,9 +1,7 @@
 import { FormEvent, useState } from 'react'
 import { Link, useHistory } from 'react-router-dom'
-
 import illustrationImg from '../assets/img/illustration.svg'
 import logoImg from '../assets/img/logo.svg';
-
 import { Button } from '../components/Button';
 import { database } from '../services/firebase';
 import { useAuth } from '../hooks/useAuth';
@@ -61,4 +59,4 @@ export function NewRoom() {
       </main>
     </div>
   )
-}
+};

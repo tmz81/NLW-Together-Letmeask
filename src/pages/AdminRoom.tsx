@@ -52,4 +52,4 @@ export function AdminRoom() {
       </main>
     </div>
   );
-}
+};

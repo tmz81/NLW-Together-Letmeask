@@ -8,7 +8,7 @@
 
 <br>
 
-## 🧪 Tecnologias
+## 💻 Techs
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
@@ -18,27 +18,25 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - TypeScript
 - Firebase
 
-## 🚀 Como executar
+## 🏃 Run
 
 Para iniciá-lo, siga os passos abaixo:
 ```bash
 # Instalar as dependências
-$ yarn
+$ npm i
 
 # Iniciar o projeto
-$ yarn start
+$ npm start
 ```
 O app estará disponível no seu browser pelo endereço http://localhost:3000.
 
 Lembrando que será necessário criar uma conta no [Firebase](https://firebase.google.com/) e um projeto para disponibilizar um Realtime Database.
 
-## 💻 Projeto
+## 📝 About
 
-Letmeask é perfeito para criadores de conteúdos poderem criar salas de Q&A com o seu público, de uma forma muito organizada e democrática. 
+Letmeask é perfeito para criadores de conteúdos poderem criar salas de Q&A com o seu público, de uma forma muito organizada e democrática.
 
-Este é um projeto desenvolvido durante a **[Next Level Week Together](https://nextlevelweek.com/)**
-
-## 🔖 Layout
+## 🎨 Layout
 
 Você pode visualizar o layout do projeto através do link abaixo:
 
@@ -46,6 +44,6 @@ Você pode visualizar o layout do projeto através do link abaixo:
 
 Lembrando que você precisa ter uma conta no [Figma](http://figma.com/).
 
-## 📝 License
+## 🪪 License
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.

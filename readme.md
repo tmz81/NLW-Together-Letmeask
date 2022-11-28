@@ -14,9 +14,9 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - React
 - Hooks
-- Sass
 - TypeScript
 - Firebase
+- Styled-Components
 
 ## 🏃 Run
 

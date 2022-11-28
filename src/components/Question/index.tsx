@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import "../styles/question.scss";
+import { Container } from "./style";
 
 type QuestionsProps = {
   content: string;
@@ -12,7 +12,7 @@ type QuestionsProps = {
 
 export function Question({ content, author, children }: QuestionsProps) {
   return (
-    <div className="question">
+    <Container className="question">
       <p>{content}</p>
       <footer>
         <div className="user-info">
@@ -21,6 +21,6 @@ export function Question({ content, author, children }: QuestionsProps) {
         </div>
         <div>{children}</div>
       </footer>
-    </div>
+    </Container>
   );
 }

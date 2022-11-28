@@ -1,33 +1,33 @@
-import { useParams } from 'react-router-dom'
-import logoImg from '../assets/img/logo.svg'
-import { Button } from "../components/Button";
-import { RoomCode } from '../components/RoomCode';
-import { Question } from '../components/Question';
+import { useParams } from "react-router-dom";
+import logoImg from "../assets/img/logo.svg";
+import { ButtonComponent } from "../components/Button";
+import { RoomCode } from "../components/RoomCode";
+import { Question } from "../components/Question";
 // import { useAuth } from '../hooks/useAuth';
 // import { database } from '../services/firebase';
-import { useRoom } from '../hooks/useRoom';
+import { useRoom } from "../hooks/useRoom";
 
-import '../styles/room.scss';
+import "../styles/room.scss";
 
 type RoomParams = {
   id: string;
-}
+};
 
 export function AdminRoom() {
   // const { user } = useAuth();
   const params = useParams<RoomParams>();
   const roomId = params.id;
 
-  const { title, questions } = useRoom(roomId)
+  const { title, questions } = useRoom(roomId);
 
   return (
     <div id="page-room">
       <header>
         <div className="content">
-          <img src={logoImg} alt='img'/>
+          <img src={logoImg} alt="img" />
           <div>
-          <RoomCode code={roomId} />
-          <Button isOutlined>Encerrar sala</Button>
+            <RoomCode code={roomId} />
+            <ButtonComponent isOutlined>Encerrar sala</ButtonComponent>
           </div>
         </div>
       </header>
@@ -39,7 +39,7 @@ export function AdminRoom() {
         </div>
 
         <div className="question-list">
-          {questions.map(question => {
+          {questions.map((question) => {
             return (
               <Question
                 key={question.id}
@@ -52,4 +52,4 @@ export function AdminRoom() {
       </main>
     </div>
   );
-};
+}

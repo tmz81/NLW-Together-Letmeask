@@ -2,7 +2,7 @@ import { FormEvent, useState } from "react";
 import { Link, useHistory } from "react-router-dom";
 import illustrationImg from "../assets/img/illustration.svg";
 import logoImg from "../assets/img/logo.svg";
-import { Button } from "../components/Button";
+import { ButtonComponent } from "../components/Button";
 import { database } from "../services/firebase";
 import { useAuth } from "../hooks/useAuth";
 
@@ -51,7 +51,7 @@ export function NewRoom() {
               onChange={(event) => setNewRoom(event.target.value)}
               value={newRoom}
             />
-            <Button type="submit">Criar sala</Button>
+            <ButtonComponent type="submit">Criar sala</ButtonComponent>
           </form>
           <p>
             Quer entrar em uma sala existente? <Link to="/">clique aqui</Link>

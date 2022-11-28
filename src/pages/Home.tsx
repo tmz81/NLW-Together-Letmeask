@@ -7,7 +7,7 @@ import { database } from "../services/firebase";
 import { ButtonComponent } from "../components/Button";
 import { useAuth } from "../hooks/useAuth";
 
-import "../styles/auth.scss";
+import { Container } from "../styles/auth";
 
 export function Home() {
   const history = useHistory();
@@ -40,7 +40,7 @@ export function Home() {
   }
 
   return (
-    <div id="page-auth">
+    <Container>
       <aside>
         <img
           src={illustrationImg}
@@ -68,6 +68,6 @@ export function Home() {
           </form>
         </div>
       </main>
-    </div>
+    </Container>
   );
 }

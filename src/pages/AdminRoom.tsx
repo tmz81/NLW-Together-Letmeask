@@ -45,7 +45,19 @@ export function AdminRoom() {
                 key={question.id}
                 content={question.content}
                 author={question.author}
-              />
+                isAnswered={question.isAnswered}
+                isHighlighted={question.isHighlighted}
+              >
+                {!question.isAnswered && (
+                  <>
+                    <button
+                      type="button"
+                    >
+                      <img src="#" alt="Marcar pergunta como respondida" />
+                    </button>
+                  </>
+                )}
+              </Question>
             );
           })}
         </div>
